@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres_source:
+    image: postgres:15-alpine
+    container_name: source_postgres_db 
+    environment:
+      POSTGRES_USER: data_engineer 
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: ecom_source
+
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+   pgdata:
