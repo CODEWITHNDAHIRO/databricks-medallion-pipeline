@@ -1,0 +1,21 @@
+=====================================================================
+AWS DATA PIPELINE INFRASTRUCTURE CONFIGURATION
+=====================================================================
+project: Databrick Medallion Pipeline 
+Environment: Development / Cloud Preparation
+
+[1] Network Bridging (Ngrok Tunnel)
+---------------------------------------------------------------------
+Local Target: localhost:5432 (Docker PostgreSQL)
+Public Ngrok Host:5.tcp.eu.ngrok.io 
+Public Ngrok Port:25497
+
+[2] AWS storage Backing
+---------------------------------------------------------------------
+S3 Ingestio Bucket: databricks-medallion-storage-jonathan
+Target Region: eu-central-1 (Frankfurt)
+
+[3] Compute Workspace
+---------------------------------------------------------------------
+Platform: Databricks Cloud 
+Deployment: Community Edition (AWS Powered)
