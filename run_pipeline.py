@@ -25,8 +25,8 @@ def main():
 
     steps = [
         "src/pipelines/01_bronze_ingestion.py",
-        "02_silver_cleaning_local.py",
-        "03_gold_orders_local.py"
+        "src/pipelines/02_silver_cleaning_local.py",
+        "src/pipelines/03_gold_orders_local.py"
     ]
     for step in steps:
         success = run_script(step)
